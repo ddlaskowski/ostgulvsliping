@@ -1,0 +1,344 @@
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+#know-how p {
+  font-size: 3.6rem;
+}
+
+
+#know-how-ico {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 41%;
+    margin: 0 30%;
+    width: 40%;
+    min-height: 50vh;
+    height: fit-content;
+    position: relative;
+    top: 5rem;
+    opacity: 0;
+    animation: fadeIn 0.6s 0.2s forwards;
+  }
+
+  #know-how-picture-before-after-frame {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
+  #know-how-picture-frame {
+
+    width: 100%;
+    height: 100%;
+  }
+
+  #article-tags p{
+    font-size: xx-small;
+    display: inline;
+    margin: 1%;
+    color: rgba(200,200,200, 0.9);
+  }
+
+  #know-how-picture {
+
+    background-size: contain;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    margin: 5% auto;
+    width: 96%;
+    min-height: 30vh;
+    opacity: 0;
+    animation: fadeIn 0.6s 0.2s forwards;
+  }
+
+  #know-how-picture-centered {
+    background-position-x: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5% auto;
+    width: 96%;
+    min-height: 45vh;
+    opacity: 0;
+    animation: fadeIn 0.6s 0.2s forwards;
+  }
+  
+  #know-how-picture-caption {
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 96%;
+    min-height: 5vh;
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 0.6s 0.2s forwards;
+  }
+
+  @keyframes knowhow-roll {
+    0% {
+      visibility: visible;
+      z-index: 2;
+      opacity: 0;
+
+    }
+
+    5% {
+      visibility: visible;
+      z-index: 4;
+      opacity: 1;
+
+    }
+    9% {
+      visibility: visible;
+      z-index: 3;
+      opacity: 1;
+
+    }  
+
+    10% {
+      visibility: hidden;
+      z-index: -1;
+      opacity: 0;
+
+    }
+    11% {
+      visibility: hidden;
+      z-index: -1;
+      opacity: 0;
+
+    }
+  }
+  #know-how-top-beam:first-of-type{
+    animation: knowhow-roll 60s infinite forwards;
+  }
+
+  #know-how-top-beam:nth-of-type(2){
+    animation: knowhow-roll 60s 6s infinite forwards;
+  }
+
+  #know-how-top-beam:nth-of-type(3){
+    animation: knowhow-roll 60s 12s infinite forwards;
+  }
+
+  #know-how-top-beam:nth-of-type(4){
+    animation: knowhow-roll 60s 18s infinite forwards;
+  }
+  #know-how-top-beam:nth-of-type(5){
+    animation: knowhow-roll 60s 24s infinite forwards;
+  }
+
+   #know-how-top-beam:nth-of-type(6){
+    animation: knowhow-roll 60s 30s infinite forwards;
+  }
+
+  #know-how-top-beam:nth-of-type(7){
+    animation: knowhow-roll 60s 36s infinite forwards;
+  }
+  #know-how-top-beam:nth-of-type(8){
+    animation: knowhow-roll 60s 42s infinite forwards;
+  }
+  #know-how-top-beam:nth-of-type(9){
+    animation: knowhow-roll 60s 48s infinite forwards;
+  }
+  #know-how-top-beam:nth-of-type(10){
+    animation: knowhow-roll 60s 54s infinite forwards;
+  }
+
+  #wrapper-know-how {
+    position: relative;
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(255,255,255,1);
+    margin: 5vh 0;
+  }
+
+  #know-how-tilbud {
+    visibility: visible;
+    z-index: -1;
+
+    font-size: 3em;
+    margin: 5vh 0vw;
+    list-style-type: none;
+    cursor: default;
+    color: #000;
+    font-family: 'Dosis';
+    font-variant: small-caps;
+    opacity: 0;
+    animation: fadeIn 0.3s 0.8s forwards;
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 40px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #know-how-tilbud div:hover {
+    color: #000;
+    
+  }
+
+  #know-how-tilbud div div {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 30%;  
+    margin: 0 0%;
+    min-width: 70%;
+    min-height: 30vh;
+  }
+
+  #know-how-tilbud p {
+    padding: 0.5vh 0vw;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  #know-how-top-beam {
+    visibility: visible;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    font-size: 3em;
+    margin: 1vh 0vw;
+    list-style-type: none;
+    cursor: default;
+    color: #000;
+    font-family: 'Dosis';
+    font-variant: small-caps;
+    opacity: 0;
+    animation: fadeIn 0.3s 0.8s forwards;
+    background-color: rgba(255,255,255,1);
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 40px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #know-how-top-beam div:hover {
+    color: #000;
+    
+  }
+
+  #know-how-top-beam div div {
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 30%;  
+    margin: 0 0%;
+    min-width: 70%;
+
+  }
+
+  #know-how-top-beam p {
+    padding: 0.5vh 0vw;
+    font-size: 3vw;
+    font-weight: 600;
+  }
+
+  #know-how-header {
+    padding: 2rem 0;
+    width: 100%;
+    height: fit-content;
+    color: #000;
+    font-size: 4.4rem;
+    cursor: default;
+    font-family: 'Dosis';
+    font-variant: small-caps;
+  }
+
+  #know-how-description {
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 40px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    font-size: 150%;
+    animation: fadeIn 0.4s 0.4s forwards;
+  }
+
+  #know-how-description p:first-of-type{
+    margin: 5vh 0;
+    font-size: 150%;
+    font-weight: 800;
+  }
+ 
+  #know-how-description p:nth-of-type(2){
+     font-family: 'Dosis';
+     font-size: 140%;
+     margin: 3vh 0;
+  } 
+  #know-how-description p:nth-of-type(3), #know-how-description p:nth-of-type(4), #know-how-description p:nth-of-type(5), #know-how-description p:nth-of-type(6), #know-how-description p:nth-of-type(7),#know-how-description p:nth-of-type(8), #know-how-description p:nth-of-type(9){
+    font-size: 130%;
+  }
+  
+
+  #know-how-description h1 {
+    font-family: 'Dosis';
+    font-variant: small-caps;
+    font-size: 3vw;
+    margin: 2vh 0;
+  }
+
+  #know-how-description p{
+    font-family: 'Imprima';
+    
+    justify-content: center;
+    font-size: 70%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #know-how {
+    margin: 5vh 0;
+  }
+  
+#know-how-gallery {
+    margin: 0 10%;
+}
+
+#know-how-beam-header {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 40px solid rgba(255, 255, 255, 0.1);
+  width: 98%;
+  margin: auto auto;
+}
+
+
+#know-how-link:hover {
+  border: #000 3px solid;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  #know-how-header {
+    font-size: 2.2rem;
+  }
+  #wrapper-know-how {
+    position: relative;
+    height: 80vh;
+  }
+  #know-how-sliping p {
+    padding: 1.5vh 0vw;
+    font-size: 4vh;
+    font-weight: 600;
+  }
+  #know-how-description h1 {
+    display: none;
+  }
+  #know-how-gallery {
+    margin: 0 2%;
+}
+#know-how-picture {
+  min-height: 15vh;
+}
+
+#know-how-picture-centered {
+  min-height: 20vh;
+ }
+
+}

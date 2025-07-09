@@ -1,0 +1,390 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+nav {
+  background: rgba(2, 8, 60, 0.9);
+}
+
+nav a, .navbar-dark .navbar-nav .nav-link, .navbar-toggler{
+  font-size: 1.3rem;
+  color: #FFF;  
+  font-variant: small-caps;
+  filter: brightness(1);
+  z-index: 99;
+}
+
+nav a:hover {
+  color: grey;
+
+}
+
+
+#navigation-menu {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.logotype {
+    width: 40vw;
+    margin-top: 8vh;
+    padding: 3vh 3vw;
+    z-index: 7;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.logotype-footer {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .logotype, .logotype-footer {
+    width:  80vw;
+    padding: 3vh 3vw;
+  }
+}
+#contact-form{
+  background: inherit;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+  color: #000;
+  font-size: larger;
+  font-variant: small-caps;
+  box-shadow: #000 0px 5px 50px;
+  padding: 3vw;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  border: 0px solid black;
+  position: relative;
+  left: 0%;
+  width: 70vw;
+  height: 40vw;
+}
+#contact-form textarea{
+    font-variant: normal;
+}
+
+
+.contact-data {
+  color: #000;
+}
+
+#contact-data:hover {
+  transform: scale(0.85);
+  text-decoration: none;
+}
+
+.contact-data:hover h1 {
+  text-decoration: none;
+}
+
+
+#contact-data {
+  background: rgba(14, 171, 20, 0.76);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #FFF;
+  padding: 10vh 1vw;
+  margin: 0vh 3vw;
+  font-size: larger;
+  font-variant: small-caps;
+  box-shadow: #000 0px 5px 10px;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  border: 0px solid black;
+  position: relative;
+  left: 2%;
+  width: 17vw;
+  height: 17vw;
+  border-radius:90%;
+  transform: scale(0.8);
+  z-index: 3;
+}
+#contact-data h1:nth-child(1){
+  -webkit-text-stroke: 1px #FFF;
+  color: #000;
+  font-size: 3em;
+  margin-top: 2vh;
+}
+
+
+#contact-form h1{
+  color: #000;
+  font-weight: 600;
+  padding: 0 0 2vh 0;
+  -webkit-text-stroke: 0.px #FFF;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header img {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.socialbar {
+  margin-top: 3vh;
+  height: 7vh;
+  border-radius: 100%;
+  box-shadow: #000 3px 0px 3px;
+}
+
+.socialbar:hover {
+  transform: scale(1.2);
+}
+
+
+
+#contactbar {
+margin: 7vh 0;
+padding: 6vh;
+background-color: rgba(255,255,255, 0.9);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+opacity: 0;
+animation: fadeIn 0.6s 0.2s forwards;
+}
+
+a{
+  color: #000;
+}
+
+#socialbar a:hover{
+  color: #000;
+}
+
+#socialbar a{
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+#contact-form button {
+  color: #000;
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 10vh 10vh;
+}
+
+#contact-form button:hover {
+  font-size: xx-large;
+  font-weight: 700;
+  -webkit-text-stroke: 1px #FFF;
+  color: #000;
+  background-color: #000;
+}
+
+
+#services {
+
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 2vh 1vw;
+  
+}
+#services p{
+  font-size: 3rem;
+  margin: 3vh 0vw;
+  list-style-type: none;
+  cursor: default;
+  color: #000;
+  font-family: 'Dosis';
+  font-weight: 300;
+  font-variant: small-caps;
+}
+
+
+
+#services div div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
+  margin: 0 0%;
+  width: 100%;
+  height: 40vh;
+  opacity: 0;
+  animation: fadeIn 2s 0.3s forwards;
+}
+
+#services a {
+  font-size: 80%;
+}
+
+#services p {
+  font-size: 4vw;
+}
+
+#service-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+li {
+  width: 15vw;
+  display: inline-block;
+}
+
+footer {
+
+margin: 15vh 0 0 0;
+padding: 1vh;
+min-height: fit-content;
+background: rgba(2, 8, 60, 0.9);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+
+footer a, footer p{
+  color: #FFF;
+  font-size: x-large;
+}
+
+#webdesign a{
+  color: #000;
+}
+
+#main-description {
+  width: 70%;
+  margin: 3rem 15%;
+
+
+}
+
+#main-description h1 {
+  font-size: 2rem;
+  font-family: 'Imprima';
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+#main-description div {
+  margin: 3rem 0;
+  font-size: 2rem;
+  font-family: 'Imprima';
+  font-weight: 300;
+}
+#main-description h3 {
+  font-size: 1.3rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #contact-form {
+    background: inherit;
+    border-radius: 0%;
+    left: -8vw;
+    width: 80vw;
+    height: fit-content;
+    margin-bottom: 0;
+    font-size: 90%;
+    color: #000;
+  }
+
+
+  #services p {
+    font-size: 3.6vh;
+  }
+
+  #services div div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 41%;
+    margin: 0 0;
+    width: 100%;
+    height: 20vh;
+  }
+
+
+  #contact-data {
+    display: none;
+  }
+  .contact-data:hover {
+    color: #000;
+    font-size:medium;
+    text-decoration: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .socialbar {
+    height: 9vh;
+  }
+  
+  #socialbar p {
+    font-size: small;
+  }
+
+
+  #contactbar {
+    margin: 0 0;
+    padding: 6vh;
+  }
+  .App-header {
+    margin-top: 15%;
+}
+.logotype {
+  z-index: 5;
+}
+
+
+}
+
+.gallery-menu-link {
+  position: relative;
+  top: -300px;
+}
+
+.kontakt-menu-link {
+  position: relative;
+}
+
+.products-menu-link {
+  position: relative;
+}
